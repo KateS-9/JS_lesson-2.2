@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример с линиями</title>
+</head>
+<body>
+    <h1>Пример простой</h1>
+    <script>
+        function line() {
+            document.writeln("<hr align='center' width='100'>");
+        }
+        for (let i = 1; i < 10; i++)
+            line();
+    </script>
+    <h2>Пример сложный</h2>
+    <script>
+        function line(width) {
+            document.writeln("<hr align='center' width='"+ width +"'>");
+        }
+        let l = 10;
+        for (let i = 0; i < 20; i++){
+            line(l);
+            l += 20;
+        }    
+    </script>
+</body>
+</html>
